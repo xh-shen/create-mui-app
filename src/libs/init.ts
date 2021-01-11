@@ -2,7 +2,7 @@
  * @Author: shen
  * @Date: 2021-01-11 21:17:18
  * @LastEditors: shen
- * @LastEditTime: 2021-01-11 23:11:11
+ * @LastEditTime: 2021-01-11 23:17:23
  * @Description: 
  */
 import {promisify} from 'util'
@@ -40,7 +40,6 @@ const init = async name => {
     log(`⚙\u{fe0f}  Installing Project plugins. This might take a while...`)
     console.log()
     await spawn('npm', ['install'], { cwd: `./${name}` })
-    await spawn('git', ['remote', 'remove', 'origin'], { cwd: `./${name}` })
     console.log()
     log(`🎉  Successfully created project ${chalk.yellow(name)}.`)
     log(
