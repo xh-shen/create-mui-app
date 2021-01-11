@@ -2,7 +2,7 @@
  * @Author: shen
  * @Date: 2021-01-11 21:17:18
  * @LastEditors: shen
- * @LastEditTime: 2021-01-11 23:02:31
+ * @LastEditTime: 2021-01-11 23:11:11
  * @Description: 
  */
 import {promisify} from 'util'
@@ -32,7 +32,7 @@ const init = async name => {
     const data = await figletPromisify('shen')
     log(data)
     // 创建项目
-    console.log(chalk.bold.blue(`Create Mui App v${require('../../package').version}`))
+    console.log(chalk.bold.blue(`Create Mui App v${require('../package').version}`))
     const targetDir = path.resolve(process.cwd(), name || '.')
     log(`✨  Creating project in ${chalk.yellow(targetDir)}.`)
     // 克隆代码
