@@ -1,0 +1,37 @@
+{
+  "name": "create-mui-app",
+  "version": "1.0.0",
+  "description": "Configuration and scripts for Create Mui App",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/xh-shen/create-mui-app.git"
+  },
+  "bin": {
+    "create-mui-app": "./commands/create-mui-app.js"
+  },
+  "keywords": [
+    "mui",
+    "cli",
+    "command"
+  ],
+  "author": "shen <9509394@qq.com>",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^4.1.0",
+    "clear": "^0.1.0",
+    "colors": "^1.4.0",
+    "commander": "^6.2.1",
+    "download-git-repo": "^3.0.2",
+    "figlet": "^1.3.0",
+    "handlebars": "^4.7.6",
+    "ora": "^5.2.0",
+    "tslib": "^2.0.3"
+  },
+  "devDependencies": {
+    "@types/clear": "^0.1.1",
+    "@types/node": "^14.14.16",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.1.3"
+  }
+}
